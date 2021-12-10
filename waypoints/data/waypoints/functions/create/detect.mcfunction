@@ -1,0 +1,1 @@
+execute if block ~ ~ ~ #waypoints:activator if data entity @s CustomName run function waypoints:create/add
