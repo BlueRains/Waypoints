@@ -1,16 +1,16 @@
-data modify storage waypoints:list temp set from storage waypoints:list list
+data modify entity @s data.list set from storage waypoints:list list
 execute store result score rotation wp.bin run data get entity @s Rotation[0]
 
-summon villager ~ -64 ~ {Tags: ["wp.left", "spawned", "wp.villager"], Rotation: [0f, 0f], waypoints: {left: 1b}, NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
+summon villager ~ -64 ~ {Tags: ["wp.left", "spawned", "wp.villager"], Rotation: [0f, 0f], NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
 scoreboard players operation rotation wp.bin -= $30 wp.settings
 execute as @e[tag=wp.left,tag=spawned] store result entity @s Rotation[0] float 1 run scoreboard players get rotation wp.bin
 
-summon villager ~ -64 ~ {Tags: ["wp.center", "spawned", "wp.villager"], Rotation: [0f, 0f], waypoints: {center: 1b}, NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
+summon villager ~ -64 ~ {Tags: ["wp.center", "spawned", "wp.villager"], Rotation: [0f, 0f], NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
 scoreboard players operation rotation wp.bin += $30 wp.settings
 execute as @e[tag=wp.center,tag=spawned] store result entity @s Rotation[0] float 1 run scoreboard players get rotation wp.bin
 execute as @e[type=villager,tag=wp.center] run tp ^ ^ ^-1
 
-summon villager ~ -64 ~ {Tags: ["wp.right", "spawned", "wp.villager"], Rotation: [0f, 0f], waypoints: {right: 1b}, NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
+summon villager ~ -64 ~ {Tags: ["wp.right", "spawned", "wp.villager"], Rotation: [0f, 0f], NoAI: 1b, NoGravity: 1b, Invulnerable: 1b, VillagerData: {profession: "minecraft:nitwit"}, Silent: 1b, CustomNameVisible: 1b, ActiveEffects: [{Id: 14b, Amplifier: 1b, Duration: 999999, ShowParticles: 0b}]}
 scoreboard players operation rotation wp.bin += $30 wp.settings
 execute as @e[tag=wp.right,tag=spawned] store result entity @s Rotation[0] float 1 run scoreboard players get rotation wp.bin
 

@@ -1,6 +1,6 @@
 {
 	"values": [
-		"#minecraft:button",
-		"#minecraft:pressure_plate"
+		"#minecraft:buttons",
+		"#minecraft:pressure_plates"
 	]
 }
