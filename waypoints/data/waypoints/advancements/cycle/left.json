@@ -3,13 +3,20 @@
     "requirement": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "entity": {
-          "type": "minecraft:villager",
-          "nbt": "waypoints:{left:1b}"
-        }
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:villager",
+              "nbt": "{Tags:[\"wp.left\",\"wp.villager\"]}"
+            }
+          }
+        ]
       }
     }
   },
+  "requirements":[["requirement"]],
   "rewards": {
     "function": "waypoints:select/cycle/left"
   }

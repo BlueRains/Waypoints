@@ -14,6 +14,6 @@ summon villager ~ -64 ~ {Tags: ["wp.right", "spawned", "wp.villager"], Rotation:
 scoreboard players operation rotation wp.bin += $30 wp.settings
 execute as @e[tag=wp.right,tag=spawned] store result entity @s Rotation[0] float 1 run scoreboard players get rotation wp.bin
 
-execute as @e[type=villager,tag=spawned] at @s run tp @s ^ ^ ^4
+execute as @e[type=villager,tag=spawned] at @s run tp @s ^ ^ ^3
 execute as @e[type=villager,tag=spawned] run data modify entity @s Pos[1] set from entity @p Pos[1]
 schedule function waypoints:zprivate/schedule/villager 1t
