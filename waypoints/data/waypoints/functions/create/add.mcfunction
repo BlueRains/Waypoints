@@ -6,3 +6,4 @@ data remove storage waypoints:list temp
 data modify storage waypoints:list list append from storage waypoints:list bin
 data remove storage waypoints:list bin
 data merge entity @s {CustomNameVisible: 1b, Invisible: 1b, Marker: 1b, Tags: ["wp.marker"]}
+tp @s ~ ~1 ~

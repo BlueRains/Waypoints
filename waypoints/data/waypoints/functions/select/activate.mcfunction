@@ -1,3 +1,4 @@
+tag @s add wp.active
 data modify entity @s data.list set from storage waypoints:list list
 execute store result score rotation wp.bin run data get entity @s Rotation[0]
 
