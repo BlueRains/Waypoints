@@ -1,0 +1,1 @@
+execute as @e[tag=wp.marker,distance=..2] run function waypoints:select/cycle/rename
