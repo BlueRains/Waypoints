@@ -1,0 +1,2 @@
+tellraw @s [{"text":"\n\n--------------------------------------","bold":true,"color":"dark_green"},{"text":"\n\n - Help","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger wp.settings set 2"}},{"text":"\n\n - Settings","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger wp.settings set 12"}},{"text":"\n\n--------------------------------------","bold":true,"color":"dark_green"}]
+scoreboard players reset @s wp.settings

@@ -1,0 +1,2 @@
+tellraw @s [{"text":"\n\n--------------------------------------","bold":true,"color":"dark_green"},{"text":"\nList current waypoints.","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger wp.settings set 13"}},{"text":"\n\n - Back","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger wp.settings set 1"}},{"text":"\n--------------------------------------","bold":true,"color":"dark_green"}]
+scoreboard players reset @s wp.settings
