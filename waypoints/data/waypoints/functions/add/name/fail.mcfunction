@@ -1,0 +1,1 @@
+tellraw @p [{"text":"A waypoint with the name ","color":"dark_red","bold": true},{"selector":"@s","bold":true,"color":"dark_red"},{"text":" already exists","color":"dark_red","bold": true}]
