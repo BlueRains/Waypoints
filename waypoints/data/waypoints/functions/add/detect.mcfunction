@@ -1,4 +1,4 @@
-execute if block ~ ~ ~ #waypoints:activator if data entity @s CustomName run function waypoints:add/name/check
 execute unless block ~ ~ ~ #waypoints:activator run tellraw @p {"text":"The waypoint also needs an activating pressure plate or button. \nDon't worry, you can change it later.","color": "dark_red","bold": true}
 execute unless data entity @s CustomName run tellraw @p {"text":"This waypoint still needs a name.","color": "dark_red","bold": true}
-say add detect
+execute if entity @e[type=marker,tag=wp.marker,distance=..10] run tellraw @p {"text":"There is already a waypoint within 10 blocks.","color": "dark_red","bold": true}
+execute if block ~ ~ ~ #waypoints:activator if data entity @s CustomName unless entity @e[type=marker,tag=wp.marker,distance=..10] run function waypoints:add/name/check
