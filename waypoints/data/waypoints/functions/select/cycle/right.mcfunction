@@ -1,4 +1,4 @@
-advancement revoke @s only waypoints:cycle/right
+#Run as wp.marker
 data modify entity @s data.list append from entity @s data.list[0]
 data remove entity @s data.list[0]
 function waypoints:select/cycle/rename

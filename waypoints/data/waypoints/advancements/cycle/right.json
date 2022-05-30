@@ -16,8 +16,8 @@
       }
     }
   },
-  "requirements":[["requirement"]],
+  "requirements": [["requirement"]],
   "rewards": {
-    "function": "waypoints:select/cycle/right"
+    "function": "waypoints:zprivate/cycle/right"
   }
 }
