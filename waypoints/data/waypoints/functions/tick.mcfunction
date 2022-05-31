@@ -1,5 +1,9 @@
- # minecraft:tick
-execute if score @s wp.add matches 1 unless score $active wp.settings matches 1 as @e[type=armor_stand,distance=..1,limit=1] at @s run function waypoints:create/detect
-execute if score @s wp.remove matches 1 as @e[type=marker,distance=..3,tag=wp.marker] run function waypoints:create/remove
+  # minecraft:tick
 execute as @s[type=marker,tag=wp.marker,tag=!wp.active] if block ~ ~ ~ #waypoints:activator[powered=true] run function waypoints:select/start
-execute as @s[tag=wp.active] unless entity @p[distance=..3] run function waypoints:select/end
+execute as @s[type=marker,tag=wp.active] unless entity @p[distance=..3] unless block ~ ~ ~ #waypoints:activator[powered=true] run function waypoints:select/end
+execute as @s[type=marker,tag=wp.marker] run scoreboard players enable @a[distance=..3] wp.remove
+# Maybe add across dimensions at some point?
+# Overworld: 19
+# Nether: 20
+# The end: 17
+# ????!? Probably length of name

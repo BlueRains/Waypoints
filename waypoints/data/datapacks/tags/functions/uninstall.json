@@ -1,5 +1,3 @@
 {
-	"values": [
-		"waypoints:uninstall"
-	]
+  "values": ["waypoints:uninstall/start"]
 }
