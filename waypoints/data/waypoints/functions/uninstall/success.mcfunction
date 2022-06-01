@@ -8,10 +8,4 @@ scoreboard objectives remove wp.add
 scoreboard objectives remove wp.remove
 scoreboard objectives remove wp.settings
 scoreboard objectives remove wp.bin
-scoreboard objectives remove wp.pos.old.x
-scoreboard objectives remove wp.pos.old.y
-scoreboard objectives remove wp.pos.old.z
-scoreboard objectives remove wp.pos.dif.x
-scoreboard objectives remove wp.pos.dif.y
-scoreboard objectives remove wp.pos.dif.z
 scoreboard objectives remove wp.count
