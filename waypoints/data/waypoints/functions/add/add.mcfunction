@@ -1,4 +1,3 @@
-say add success
 summon marker ~ ~ ~ {Tags: ["wp.marker"]}
 data modify storage waypoints:list bin set from storage waypoints:list template
 data modify storage waypoints:list temp set from entity @s

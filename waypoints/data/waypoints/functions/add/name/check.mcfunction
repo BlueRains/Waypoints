@@ -1,4 +1,3 @@
-say add name check
 data modify storage list:compare B set from entity @s CustomName
 data modify storage list:compare list set from storage waypoints:list list
 function waypoints:add/name/cycle

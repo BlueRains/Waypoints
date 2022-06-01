@@ -1,5 +1,4 @@
 #define storage list:compare
-say cycle remove
 data modify storage list:compare A set from storage waypoints:list list[0]
 execute store success score $CompFail wp.bin run data modify storage list:compare A set from storage list:compare B
 execute if score $CompFail wp.bin matches 1 run data modify storage waypoints:list list append from storage waypoints:list list[0]
